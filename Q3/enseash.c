@@ -1,56 +1,5 @@
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <stdio.h>
-#include <time.h>
+// for this question, we just change the main fonction
 
-#define MAX_COMMAND_LENGTH 100
-
-
-/*Welcom function*/
-void welcome_message() {
-    write(1, "Welcome to the ENSEA Shell.\n", 28);
-    write(1, "To exit, type 'exit'\n", 22);
-    /*Here, we write the command to print message.(1) for standard output, then the string,
-    then the string size*/
-}
-
-/*Function to execute our command*/
-void execute_command(char *command) {
-    pid_t pid, wpid;
-    int status;
-
-    /*Creation of a new process with fork()*/
-    pid = fork();
-
-    if (pid == 0) {
-        // son process
-        //Here, we execute the command in son process thanks to execlp
-        if (execlp(command, command, (char *)NULL) == -1) {
-            //If there is an error, we display an error message
-            perror("enseash");
-            //Exit of the son process with the echec code
-            _exit(EXIT_FAILURE);
-        }
-    }
-
-    else if (pid < 0) {
-        //If there is an error, we display an error message
-        perror("enseash");
-    } 
-    
-    else {
-        // parent process
-        //Waiting for the execute end of the command in son process
-        do {
-            wpid = waitpid(pid, &status, WUNTRACED);
-        } while (!WIFEXITED(status) && !WIFSIGNALED(status));
-    }
-}
-
-//main function
 int main(int argc, char *argv[]) {
 
     char user_input[MAX_COMMAND_LENGTH];
@@ -69,7 +18,7 @@ int main(int argc, char *argv[]) {
         // without this command, "enseash %" stay display even after have write "exit"
         user_input[strcspn(user_input, "\n")] = 0;
     
-        //verification of the exit command to leave the shell
+        //verification of the exit command to leave the shell, here we put a 'or' = || for implement the ctrl+d action for exit the sheel.
         if (strcmp(user_input, "exit") == 0 || bytes_read == 0) {
             // Display of departure message
             write(1, "Good bye!\n", 11);
