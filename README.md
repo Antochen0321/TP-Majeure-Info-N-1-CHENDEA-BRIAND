@@ -3,4 +3,14 @@ Question 1:
 Dans cette question, nous devions créer une shell ensea, le but était simplement d'afficher le message d'acceuil et de rentrer dans notre invite de commande personnalisée.  
 Voici ce que l'on voit lorsque l'on execute le code contenu dans le fichier "enseash.c" :  
 On voit bien que lorsque l'on se place dans le bon répertoire et que l'on exécute ./enseash, on rentre dans notre micro-shell  
+  
 ![Q1](screen/Q1.png)  
+
+Question 2:  
+Nous avions déjà crée une micro shell permettant d'executer des fonctions simples (si elles sont implémentées dans l'environnement de travail.  
+Il fallait simplement importer 'fortune' et 'date' pour faire des tests simples:  
+sudo apt-get install fortune  
+sudo apt-get install date  
+
+![Q1](screen/Q2.png) 
+
