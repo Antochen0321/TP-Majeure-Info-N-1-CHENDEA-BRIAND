@@ -9,13 +9,16 @@
 
 
 /*Welcom function*/
-void welcome_message() {
-    write(1, "Welcome to the ENSEA Shell.\n", 28);
-    write(1, "To exit, type 'exit'\n", 22);
-    /*Here, we write the command to print message.(1) for standard output, then the string,
-    then the string size*/
+void welcome(){
+    char welcome_message = "Bienvenue dans le Shell ENSEA.\nPour quitter, tapez 'exit'. \n";
+    //Here, we write the welcome message, it must be printed just after the opening of our shell
+    write(STDOUT_FILENO, welcome_message, sizeof(welcome_message) - 1);
+    //We use "write" for print the message, this function take 3 arguments : 
+    //                              The description of the file (for example here, is an out file)
+    //                              The *buf, a pointer to the memory buf which contains the message
+    //                              The size of the message
+    // On note pour la suite du code que STDOUT_FILENO peut être remplacé par un 1 (ce qui revient au même lors de l'execution)
 }
-
 
 /*Function to execute our command*/
 void execute_command(char *command) {
