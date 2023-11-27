@@ -1,4 +1,4 @@
-<span style="fontsize: 18px;">TP Majeure Info N1 CHENDEA BRIAND<span>
+<span style="font-size: 18 px;">TP Majeure Info N1 CHENDEA BRIAND<span>
 
 __Question 1:__
 Dans cette question, nous devions créer une shell ensea, le but était simplement d'afficher le message d'acceuil et de rentrer dans notre invite de commande personnalisée.  
