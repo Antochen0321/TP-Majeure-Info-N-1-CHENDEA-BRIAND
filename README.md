@@ -1,8 +1,6 @@
-#<span style="color: red;">TP Majeure Info N1 CHENDEA BRIAND</span> 
+#TP Majeure Info N1 CHENDEA BRIAND
 
-
-
-__Question 1:__  
+<span style="color: red;">__Question 1:__<span>    
 Dans cette question, nous devions créer une shell ensea, le but était simplement d'afficher le message d'acceuil et de rentrer dans notre invite de commande personnalisée.  
 Voici ce que l'on voit lorsque l'on execute le code contenu dans le fichier "enseash.c" :  
 On voit bien que lorsque l'on se place dans le bon répertoire et que l'on exécute ./enseash, on rentre dans notre micro-shell  
