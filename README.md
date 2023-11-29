@@ -15,7 +15,7 @@ Il fallait simplement importer 'fortune' et 'date' pour faire des tests simples:
 *sudo apt-get install fortune*  
 *sudo apt-get install date*  
 
-![Q1](screen/Q2.png) 
+![Q2](screen/Q2.png) 
   
 Le code associé à cette fonction se trouve aussi dans le dossier Q1 comme nous n'avons rien changé
 
