@@ -42,4 +42,5 @@ Et voici une capture de cmd lors de 3 appels successifs de myprogramm.c :
 ![Q4](Q4/Q4.png)  
 
 __Question5:__  
-
+Dans cette question, on reprends la partie de code écrite dans la question 4, en rajoutant toutefois un timer permettant de mesurer le temps d'exécution de l'appel. On utilise pour cela un clock_gettime.  
+On peut voir sur l'image ci-dessous que l'appel fonctionne bien, le temps s'affichant bien en ms.  
