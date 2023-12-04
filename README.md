@@ -33,7 +33,7 @@ On regarde ce qui s'affiche pour une fonction (sans return) écrite de 3 manièr
   
 ![fun1](Q4/fonctionV1.png)  
   
-4) Qui comporte un segmentation false  
+3) Qui comporte un segmentation false  
   
 ![fun1](Q4/fonctionV2.png)  
   
@@ -43,4 +43,14 @@ Et voici une capture de cmd lors de 3 appels successifs de myprogramm.c :
 
 __Question5:__  
 Dans cette question, on reprends la partie de code écrite dans la question 4, en rajoutant toutefois un timer permettant de mesurer le temps d'exécution de l'appel. On utilise pour cela un clock_gettime.  
-On peut voir sur l'image ci-dessous que l'appel fonctionne bien, le temps s'affichant bien en ms.  
+Pour être sûrs que notre code fonctionne bien, on ajoute un sleep de 2 secondes à notre fonction test. Cela permettra de voir si le temps affiché est fiable, normalement il devrait être de 2000 + t ms avec t de l'odre de la miliseconde ou des 10 milisecondes.  
+
+![fun2](Q5/FunQ5.png)  
+  
+On peut voir sur l'image ci-dessous que l'appel fonctionne bien, le temps s'affichant étant de 2002 ms.  
+
+![Q5](Q5/Q5.png)  
+  
+__Question6:__  
+
+
