@@ -58,6 +58,9 @@ Voici ce que l'on peut observer dans le cmd avant et après compilation du nouve
 ![Q6](Q6/Q6.png)  
 
 __Question7:__  
-Avant de rajouter le code de cette question, nous avons constaté que notre code précedent ne permet pas de prendre en compte plus d'un argument pour un appel, nous modifions donc tout d'abord notre code afin de prendre en compte plusieurs arguments. Nous créons pour cela un tableau pour les arguments (de taille 50 par sécurité).
+Avant de rajouter le code de cette question, nous avons constaté que notre code précedent ne permet pas de prendre en compte plus d'un argument pour un appel, nous modifions donc tout d'abord notre code afin de prendre en compte plusieurs arguments. Nous créons pour cela un tableau pour les arguments (de taille 50 par sécurité).IL faut créer une boucle while afin de mettre tous les arguments dans un même tableau de pointeurs de chaînes de caractères. Ensuite, pour appeler les arguments, on utilise cette fois un execvp afin de faire appel au tableau.  
 
+![Q7](Q7/Q7.png)  
+
+Nous n'avons pas réussi à aller plus loin.
 
