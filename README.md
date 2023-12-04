@@ -24,4 +24,22 @@ Nous avions déjà, lors de la question 1, implémenté le 'exit', on peut le vo
 
 Cette partie du code est écrite dans le dossier Q2.
 
+__Question 4:__  
+La partie de code ajoutée pour cette question est dans le dossier Q4. 
+L'objectif est que notre invite de commande renvoie une expression différente en fonction des appels, en particulier qu'elle puisse signaler les erreurs de types 'Segmentation False' (pour laquelle elle renverra un 'sign'). Lorsque le preogramme appelé ne compile pas, il n'est pas reconnue par enseash qui renvoie un 'exit: 1'. Lorsqu'il compile et s'execute sans problème, elle renvoie un 'exit: 0', cependant, en cas de return dans la fonction, elle renvoie bien sûr la valeur appelée par le return.  
+On regarde ce qui s'affiche pour une fonction (sans return) écrite de 3 manières:  
+1) Non définie ou qui ne compile pas.  
+2) Qui compile et s'execute sans problème
+  
+![fun1](Q4/fonctionV1.png)  
+  
+4) Qui comporte un segmentation false  
+  
+![fun1](Q4/fonctionV2.png)  
+  
+Et voici une capture de cmd lors de 3 appels successifs de myprogramm.c :
+
+![Q4](Q4/Q4.png)  
+
+__Question5:__  
 
