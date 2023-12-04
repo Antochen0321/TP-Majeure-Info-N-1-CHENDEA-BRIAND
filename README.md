@@ -58,6 +58,6 @@ Voici ce que l'on peut observer dans le cmd avant et après compilation du nouve
 ![Q6](Q6/Q6.png)  
 
 __Question7:__  
-
+Avant de rajouter le code de cette question, nous avons constaté que notre code précedent ne permet pas de prendre en compte plus d'un argument pour un appel, nous modifions donc tout d'abord notre code afin de prendre en compte plusieurs arguments. Nous créons pour cela un tableau pour les arguments (de taille 50 par sécurité).
 
 
