@@ -52,5 +52,12 @@ On peut voir sur l'image ci-dessous que l'appel fonctionne bien, le temps s'affi
 ![Q5](Q5/Q5.png)  
   
 __Question6:__  
+Dans cette question, on rajoute la possibilité d'appeller des fonctions possédant des arguments dans notre enseash. Pour cela on rajoute les lignes de codes visibles dans le dossier Q6. On utilise un strtok qui permet de séquencer la commande afin d'en extraire une première chaîne de caractère (qui est la commande en elle-même) puis les autres (qui sont les arguments).  
+Voici ce que l'on peut observer dans le cmd avant et après compilation du nouveau code :  
+
+![Q6](Q6/Q6.png)  
+
+__Question7:__  
+
 
 
